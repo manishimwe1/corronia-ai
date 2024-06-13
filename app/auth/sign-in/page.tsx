@@ -18,11 +18,13 @@ export default function Page() {
 							</Button>
 
 							<p>
-								Already have an account?
+								You don&apos;t have an
+								account?
 								<Link
-									href='/auth/sign-in'
+									href='/auth/sign-up'
 									className='font-bold'>
-									Sign In
+									{" "}
+									Sign Up
 								</Link>
 							</p>
 						</div>
