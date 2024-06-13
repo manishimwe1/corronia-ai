@@ -14,8 +14,8 @@ const layout = async ({
 		redirect("/");
 	}
 	return (
-		<div className='h-screen flex w-full justify-center'>
-			<div className='w-[600px] lg:w-full flex flex-col items-start p-6'>
+		<div className='h-screen flex w-full justify-center overflow-hidden'>
+			<div className='lg:w-[600px] w-full flex flex-col items-start p-6'>
 				<Image
 					src={"/images/logo.png"}
 					alt='logo'
@@ -29,7 +29,9 @@ const layout = async ({
 				/>
 
 				{children}
-				<div className='hidden lg:flex flex-1 max-h-full w-full  overflow-hidden relative bg-cream flex-col pt-10 pl-24 gap-3'>
+			</div>
+			<div className='w-full hidden flex-1 h-full lg:flex max-h-full relative'>
+				<div className='  w-full  overflow-hidden  bg-cream flex-col pt-10 pl-24 gap-3'>
 					<h2 className='text-gravel md:text-4xl font-bold'>
 						Hi, I'm your Ai powered sales
 						assistant, corinna!

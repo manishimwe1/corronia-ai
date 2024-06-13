@@ -1,3 +1,5 @@
+"use client";
+
 import React, {
 	Dispatch,
 	ReactNode,
@@ -21,7 +23,7 @@ const authContext = createContext(InitialValues);
 
 const { Provider } = authContext;
 
-export const authContextProvider = ({
+export const AuthContextProvider = ({
 	children,
 }: {
 	children: ReactNode;
@@ -37,7 +39,7 @@ export const authContextProvider = ({
 	return <Provider value={values}>{children}</Provider>;
 };
 
-export const AuthContextProvider = () => {
+export const useAuthContextHook = () => {
 	const state = useContext(authContext);
 
 	return state;
