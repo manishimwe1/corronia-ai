@@ -14,8 +14,8 @@ const layout = async ({
 		redirect("/");
 	}
 	return (
-		<div className='h-screen flex w-full justify-center overflow-hidden'>
-			<div className='lg:w-[600px] w-full flex flex-col items-start p-6'>
+		<div className='h-screen overflow-y-auto flex w-full justify-center overflow-hidden'>
+			<div className='lg:w-[600px] w-full h-full flex flex-col items-start p-6'>
 				<Image
 					src={"/images/logo.png"}
 					alt='logo'

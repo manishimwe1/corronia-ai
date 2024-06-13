@@ -50,7 +50,7 @@ export const useSignUpForm = () => {
 		} catch (error: any) {
 			toast({
 				title: "Error",
-				description: error.errors[0].longMessage,
+				description: error.errors[0]?.longMessage,
 			});
 		}
 	};
@@ -91,6 +91,11 @@ export const useSignUpForm = () => {
 								completeSignup.createdSessionId,
 						});
 						setLoading(false);
+						toast({
+							title: "Successfull",
+							description:
+								"Successfull created",
+						});
 						router.push("/dashboard");
 					}
 
