@@ -7,7 +7,7 @@ export default authMiddleware({
 		"/portal(.*)",
 		"/images(.*)",
 	],
-	ignoredRoutes: ["/chatbot"],
+	ignoredRoutes: ["/chatbot", "/favicon.ico"],
 });
 
 export const config = {
